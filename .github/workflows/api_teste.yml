@@ -21,6 +21,9 @@ jobs:
 
       - name: Install Requirements
         run:  pip install requests
+
+      - name: Install Requirements 2
+        run:  pip install python-dotenv
               
       - name: Test
         run: python -v ./scripts/teste.py
