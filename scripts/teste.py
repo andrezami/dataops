@@ -1,6 +1,7 @@
 import requests
-from config import configs_work
 
-for key in configs_work:
-        response = requests.get(configs_work[key]["endpoint"])
+urls = ['https://swapi.dev/api/films/', 'https://swapi.dev/api/people/', 'https://swapi.dev/api/planets/']
+
+for url in urls:
+        response = requests.get(url)
         assert response.status_code == 200
