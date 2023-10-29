@@ -2,3 +2,5 @@
 scripts/config copy.py
 scripts/__pycache__/config.cpython-311.pyc
 scripts/__pycache__/utils.cpython-311.pyc
+scripts/__pycache__/saneamento.cpython-311pyc
+
