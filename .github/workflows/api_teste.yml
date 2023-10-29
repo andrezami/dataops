@@ -23,4 +23,4 @@ jobs:
         run:  pip install requests
               
       - name: Test
-        run: python -v teste.py
+        run: python -v ./scripts/teste.py
