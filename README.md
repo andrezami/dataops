@@ -12,4 +12,4 @@ Nesse projeto final vivenciamos as seguintes fases:
 * Armazenamento: Após o tratamento, os dados são armazenados em formato para serem consumidos por outras aplicações ou dashboard de visualização.
 * Monitoramento: Utilização de logs e tratamento de erros para acompanhar o resultado da execução do pipeline de dados. 
 
-O código-fonte foi apresentado pela professora Carolina Zambelli durante as aulas ao vivo da disciplina do MBA.
+O código-fonte utilizado foi apresentado e disponibilizado pela professora Carolina Zambelli durante as aulas ao vivo da disciplina do MBA.
