@@ -1,0 +1,12 @@
+stage;type;error;table;datetime
+ingestion;KeyError;'results';films;2023-10-28 22:48:43.085620
+ingestion;KeyError;'results';films;2023-10-28 22:48:50.939239
+ingestion;KeyError;'results';films;2023-10-28 22:48:58.389510
+ingestion;KeyError;'results';films;2023-10-28 22:49:06.077547
+ingestion;KeyError;'results';films;2023-10-28 22:49:12.528361
+ingestion;KeyError;'results';planets;2023-10-28 22:49:17.838010
+ingestion;KeyError;'results';films;2023-10-28 22:49:19.233238
+ingestion;KeyError;'results';planets;2023-10-28 22:49:24.051433
+ingestion;KeyError;'results';films;2023-10-28 22:49:25.283446
+ingestion;KeyError;'results';planets;2023-10-28 22:49:28.152822
+ingestion;KeyError;'results';films;2023-10-28 22:49:29.581365

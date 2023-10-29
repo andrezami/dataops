@@ -4,7 +4,8 @@ import urllib.parse
 import pandas as pd
 from datetime import datetime, date
 from config import configs_work, configs_dw
-from utils import Saneamento, sw_work_to_dw
+from utils import sw_work_to_dw, error_handler
+from saneamento import Saneamento
 
 def ingestion(page):
 
@@ -12,15 +13,31 @@ def ingestion(page):
 
     for key in configs_work:
         params = urllib.parse.urlencode({'format': 'json', 'page': page})
-        response = requests.get(configs_work[key]["endpoint"] + params).json()
+        response = requests.get(configs_work[key]["endpoint"] + params)
 
+        #print(response.status_code)
+
+        response = response.json()
+
+        try:
+            data = response['results']
+            raw_path = configs_work[key]["raw_path"].replace('$id',str(page))
+            with open(raw_path, "w") as final: json.dump(data, final)
+            payload[key] = raw_path
+        except Exception as exception_error:
+            error_handler(exception_error, key, 'ingestion')
+
+    return payload
+        
+'''
         if str(response) != "{'detail': 'Not found'}":
             data = response['results']
             raw_path = configs_work[key]["raw_path"].replace('$id',str(page))
             with open(raw_path, "w") as final: json.dump(data, final)
             payload[key] = raw_path
+'''
 
-    return payload
+
 
 def preparation_work(payload):
 
@@ -34,6 +51,7 @@ def preparation_work(payload):
             san.normalize_null()
             san.tipagem()
             san.normalize_str()
+            san.null_tolerance()
             san.save_work()
     else:
         print("sem dados novos")
@@ -43,7 +61,7 @@ def preparation_work(payload):
 
 
 if __name__ == '__main__':
-    for j in range(1,3):
+    for j in range(1,10):
         payload = ingestion(j)
         preparation_work(payload)
     sw_work_to_dw(configs_work, configs_dw)

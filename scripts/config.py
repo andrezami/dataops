@@ -29,3 +29,6 @@ configs_dw = {
         "meta_path": os.environ.get('dw_meta_path'),
         "dw_path": os.environ.get('dw_path')
 }
+
+logs_file = os.environ.get('logs_file')
+#id_file = os.environ.get('id_file')
