@@ -7,6 +7,7 @@ from config import configs_work, configs_dw
 from utils import sw_work_to_dw, error_handler
 from saneamento import Saneamento
 
+# Ingestão de dados
 def ingestion(page):
 
     payload = {}
@@ -38,7 +39,7 @@ def ingestion(page):
 '''
 
 
-
+# Saneamento e Tratamento dos dados
 def preparation_work(payload):
 
     if len(payload) > 0:

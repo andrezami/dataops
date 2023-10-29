@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
+#Configuração .env
 configs_work = {
     'people':{
         "endpoint": os.environ.get('people_endpoint'),

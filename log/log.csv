@@ -1,12 +1,12 @@
 stage;type;error;table;datetime
-ingestion;KeyError;'results';films;2023-10-28 22:48:43.085620
-ingestion;KeyError;'results';films;2023-10-28 22:48:50.939239
-ingestion;KeyError;'results';films;2023-10-28 22:48:58.389510
-ingestion;KeyError;'results';films;2023-10-28 22:49:06.077547
-ingestion;KeyError;'results';films;2023-10-28 22:49:12.528361
-ingestion;KeyError;'results';planets;2023-10-28 22:49:17.838010
-ingestion;KeyError;'results';films;2023-10-28 22:49:19.233238
-ingestion;KeyError;'results';planets;2023-10-28 22:49:24.051433
-ingestion;KeyError;'results';films;2023-10-28 22:49:25.283446
-ingestion;KeyError;'results';planets;2023-10-28 22:49:28.152822
-ingestion;KeyError;'results';films;2023-10-28 22:49:29.581365
+ingestion;KeyError;'results';films;2023-10-28 23:02:15.329668
+ingestion;KeyError;'results';films;2023-10-28 23:02:23.264429
+ingestion;KeyError;'results';films;2023-10-28 23:02:31.187915
+ingestion;KeyError;'results';films;2023-10-28 23:02:38.111186
+ingestion;KeyError;'results';films;2023-10-28 23:02:45.257920
+ingestion;KeyError;'results';planets;2023-10-28 23:02:50.125734
+ingestion;KeyError;'results';films;2023-10-28 23:02:51.684470
+ingestion;KeyError;'results';planets;2023-10-28 23:02:56.728917
+ingestion;KeyError;'results';films;2023-10-28 23:02:58.141686
+ingestion;KeyError;'results';planets;2023-10-28 23:03:01.454404
+ingestion;KeyError;'results';films;2023-10-28 23:03:02.828851
