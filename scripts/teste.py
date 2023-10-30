@@ -4,4 +4,4 @@ urls = ['https://swapi.dev/api/films/', 'https://swapi.dev/api/people/', 'https:
 
 for url in urls:
         response = requests.get(url)
-        assert response.status_code == 200
+        assert response.status_code == requests.codes.ok
